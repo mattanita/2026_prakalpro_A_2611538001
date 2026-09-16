@@ -6,7 +6,7 @@ print("=================================")
 input_data = input("Masukkan beberapa angka, pisahkan dengan koma: ")
 
 # Mengubah input menjadi list ineter
-data = [int(angka.strip()) for angka in input _data.strip(",")]
+data = [int(angka.strip(",")) for angka in input_data.strip(",").split(",")]
 
 nilai_dicari = int(input("Masukkan angka yang ingin dicari: "))
 
@@ -19,13 +19,13 @@ print("2. OPERATOR IDENTIAS")
 print("==================================")
 
 # objek1 menggunakan list dari input pengguna
-objek = data
+objek1 = data
 
 # objek2 merujuk pada objek yang sama dengan objek1 
-objek2 = o0bjek1
+objek2 = objek1
 
 # objek3 memiliki isi sama, tetapi merupakan objek baru 
-objek = data.copy()
+objek3 = data.copy()
 
 print("objek1 =", objek1)
 print("objek2 =", objek2)
@@ -38,10 +38,10 @@ print("objek1 is objek2 =", hasil)
 
 # Operator is not
 hasil = objek1 is not objek2
-print("\nOpeerator identitas IS NOT")
+print("\nOperator identitas IS NOT")
 print("objek1 is not objek2 =", hasil)
 
 # Membangdingkan identitas dan nilia
-prin("\nPerbandingan identitas dan nilai")
+print("\nPerbandingan identitas dan nilai")
 print("objek1 is objek3 =", objek1 is objek3)
 print("objek1 == objek3 =", objek1 == objek3)
