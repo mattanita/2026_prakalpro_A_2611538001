@@ -9,13 +9,13 @@ promo_code_valid_8001 = promo_input_8001 in ["y", "n"]
 total_discount_percent_8001 = 0
 
 if total_purchase_8001 > 1000000:
-    total_discount_percent_8001 -= 10  # Large purchase discount
+    total_discount_percent_8001 += 10  # Large purchase discount
 
 if is_member_8001:
-    total_discount_percent_8001 -= 5  # Member discount
+    total_discount_percent_8001 += 5  # Member discount
 
 if promo_code_valid_8001:
-    total_discount_percent_8001 -= 15  # Voucher discount
+    total_discount_percent_8001 += 15  # Voucher discount
 
 
 # Calculate discount amount and total payment
