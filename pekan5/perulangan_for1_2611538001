@@ -1,0 +1,20 @@
+
+# Program ini menggunakn fungsi input()
+
+ulang = int(input("Masukkan jamlah perulangan: "))
+
+for i in range(ulang):
+    print(f"Perulangan ke-{i}")
+
+    repeat = int(input("Enter the numberof repetition: "))
+    print("Repetition from 0 to" , repeat-1)
+    for i in range(repeat):
+        print(i, end=" ")
+    print()
+    print("Repetition from1 to" , repeat)
+    for i in range(repeat):
+        print(i, end=" ")
+    print()
+    print("Repetition from1 to", repeat)
+    for i in range(repeat) :
+        print(i+1, end=" ")
